@@ -55,14 +55,14 @@ console.log(student.gpa);
 
 
     //here is a function that is outputting the average grade for student 1
-    function average (){
+    function average (sg){
 
-       var total = student.gpa[0] + student.gpa[1] + student.gpa[2] + student.gpa[3] / student.gpa.length;
+       var total = sg[0] + sg[1] + sg[2] + sg[3] / sg.length;
 
         return total;
     }
 
-    console.log(average()); //this console calls the function and displays it in the console log
+    console.log(average(student.gpa)); //this console calls the function and displays it in the console log
 
 
 
